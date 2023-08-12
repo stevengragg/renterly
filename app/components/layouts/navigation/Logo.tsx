@@ -16,6 +16,7 @@ const Logo = (props: Props) => {
         width="64"
         alt="Renterly App Logo"
         src="/images/Renterly_Logo.png"
+        priority
       />
       <b className="hidden md:block font-bold text-lg">Renterly</b>
     </div>
