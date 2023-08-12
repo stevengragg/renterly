@@ -2,6 +2,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 
+// components
+import Navbar from "./components/layouts/navigation/Navbar";
+
 export const metadata: Metadata = {
   title: "Renterly | Vacation Homes and Condo Rentals near you",
   description:
@@ -20,6 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className} suppressHydrationWarning={true}>
+        {/* Navbar */}
+        <Navbar />
+        {/* Navbar end */}
         {children}
       </body>
     </html>
